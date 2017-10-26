@@ -71,5 +71,5 @@ def sum_array(s)
 end
 
 def add_s(s)
-  s.each_with_index.collect{ |element, index| element += "s"; if (index == 2) {element} }
+  s.each_with_index.collect{ |element, index| if (index == 1) {element} else element += "s"}
 end
